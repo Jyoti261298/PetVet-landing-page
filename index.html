@@ -8,7 +8,7 @@
   </head>
   <body>
     <nav>
-      <img />
+      <img src="./logo.jpg" alt="company-logo" />
       <ul>
         <li>
           <a href="#home">Home</a>
@@ -20,110 +20,303 @@
           <a href="#services">Services</a>
         </li>
         <li>
-          <a href="#about us">About Us</a>
-        </li>
-        <li>
           <a href="#contact">Contact Us</a>
         </li>
-      </ul>
-      <ul>
-        <li>
-          <span>F</span>
+        <li class="icon">
+          <i class="fa-brands fa-facebook"></i>
         </li>
-        <li>
-          <span>T</span>
+        <li class="icon">
+          <i class="fa-brands fa-twitter"></i>
         </li>
       </ul>
+      <span class="mobile-menu"><i class="fa-solid fa-bars"></i></span>
     </nav>
     <section class="home" id="home">
-      <div>
-        <h1>Business Overview</h1>
-        <p>
-          PetVet is multi use website for pet parents to make there life easy
-        </p>
-        <button>Discover</button>
-      </div>
+      <h1>Business Overview</h1>
+      <p>
+        PetVet provides pet owners with a trusted, comprehensive platform that
+        enhances the well-being of their pets through high-quality products,
+        expert advice, and a vibrant community
+      </p>
+      <button>Discover</button>
     </section>
 
     <section class="intro" id="intro">
       <div class="content">
-        <span class="intro-title">Intro</span>
-        <h2>We offer some best services in the town</h2>
-        <p>
-          description about pet vet you can state the mission and everyting
-          Jyoti Singh - CEO
-        </p>
+        <div class="text">
+          <span class="intro-title">Intro</span>
+          <!-- <br/> -->
+          <h2>We offer some best services in the town</h2>
+          <br />
+          <p>
+            Welcome to PetVet.com, your ultimate online hub for everything
+            pet-related! Whether you’re a seasoned pet owner or new to the world
+            of furry, feathered, or scaly friends, we’ve got you covered with
+            all the resources, products, and community support you need to
+            ensure your pets live happy, healthy lives.
+          </p>
+          <br />
+          <p class="italic">
+            "our misson is to provide pet owners with a trusted, comprehensive
+            platform that enhances the well-being of their pets through
+            high-quality products, expert advice, and a vibrant community"
+          </p>
+          <br />
+          <h4>Jyoti Singh - CEO</h4>
+        </div>
+        <div class="image-container">
+          <img src="/intro-pic.jpg" alt="intro-page" />
+        </div>
       </div>
-      <img />
       <div class="skill-list-container">
         <div class="skills-item">
-          <span>Icon</span>
-          <h4>Grooming</h4>
+          <div class="icon">
+            <span><i class="fa-solid fa-store"></i></span>
+          </div>
+          <h4>E-com Store</h4>
           <p>Pets grooming is more important for hygene</p>
         </div>
         <div class="skills-item">
-          <span>Icon</span>
-          <h4>Vet Visit</h4>
+          <div class="icon">
+            <i class="fa-solid fa-cash-register"></i>
+          </div>
+          <h4>Pet Care Information</h4>
           <p>Pets grooming is more important for hygene</p>
         </div>
         <div class="skills-item">
-          <span>Icon</span>
-          <h4>Ecom</h4>
+          <div class="icon">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+          <h4>Community features</h4>
+          <p>Pets grooming is more important for hygene</p>
+        </div>
+        <div class="skills-item">
+          <div class="icon">
+            <i class="fa-solid fa-paw"></i>
+          </div>
+          <h4>Pet Service Directory</h4>
           <p>Pets grooming is more important for hygene</p>
         </div>
       </div>
     </section>
 
     <section class="services" id="services">
-      <span class="section-title">Serives</span>
+      <span class="section-title">Sercives</span>
       <h3>Choose The Services Package That Suits Your Needs</h3>
       <div class="service-list-container">
         <div class="service-item">
-          <img />
-          <h3>Grooming</h3>
-          <p></p>
+          <img src="/grooming.jpg" alt="grooming" loading="lazy" />
+          <h3>Pet Services</h3>
+          <p>
+            We understand that your pet's well-being is a top priority, and
+            we're here to help you make informed decisions with ease.
+          </p>
           <ul>
-            staring at $199
+            <li>Veterinarians</li>
+            <li>Pet Sitters</li>
+            <li>Groomers</li>
+            <li>Training</li>
           </ul>
-          <h4></h4>
-          <button>Details</button>
+          <h6>staring at<span class="price">$199</span></h6>
+          <button id="Pet-Services">Details</button>
         </div>
         <div class="service-item">
-          <img />
-          <h3>Grooming</h3>
-          <p></p>
-          <ul></ul>
-          <h4>staring at $199</h4>
-          <button>Details</button>
+          <img src="/shoppinig.jpg" alt="ecom" loading="lazy" />
+          <h3>E-commerce Store</h3>
+          <p>
+            Our goal is to provide pet owners with the best selection of pet
+            essentials, all in one convenient place with easy payment method.
+          </p>
+          <ul>
+            <li>Pet Food</li>
+            <li>Accessories</li>
+            <li>Grooming Products</li>
+            <li>Health Products</li>
+          </ul>
+          <h6>staring at <span class="price">$199</span></h6>
+          <button onclick="displayText()">Details</button>
+        <div id="textField" style="display: none;">Hello World</div>
         </div>
         <div class="service-item">
-          <img />
-          <h3>Grooming</h3>
-          <p></p>
-          <ul></ul>
-          <h4>staring at $199</h4>
-          <button>Details</button>
+          <img src="/vet.jpg" alt="vet-visit" loading="lazy" />
+          <h3>Pet Care Information</h3>
+          <p>
+            Our goal is to empower you with knowledge on all aspects of pet
+            care, from nutrition and grooming to behavior and health.
+          </p>
+          <ul>
+            <li>Blog Articles</li>
+            <li>Guides</li>
+            <li>Videos</li>
+            <li>Videos</li>
+          </ul>
+          <h6>staring at <span class="price">$199</span></h6>
+          <button id="Pet-care">Details</button>
         </div>
         <div class="service-item">
-          <img />
-          <h3>Grooming</h3>
-          <p></p>
-          <ul></ul>
-          <h4>staring at $199</h4>
-          <button>Detai ls</button>
+          <img src="/medicine.jpg" alt="medicine" loading="lazy" />
+          <h3>Community Features</h3>
+          <p>
+            our community hub, you'll find opportunities to share experiences,
+            seek advice, and celebrate the joys of pet ownership together.
+          </p>
+          <ul>
+            <li>Forums</li>
+            <li>Pet Profiles</li>
+            <li>Events</li>
+            <li>Events</li>
+          </ul>
+          <h6>staring at<span class="price">$199</span></h6>
+          <button id="community-features">Details</button>
         </div>
       </div>
       <div class="testimonials">
         <h3>Read out test Testimonials</h3>
+        <br />
         <p>
           Our clients are our partners we cannot imagine a better future of our
+          <br />
           company without hepling them react their objective
         </p>
+        <br />
+        <div class="testimonial-list-container">
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/female/22.jpg"
+              alt="client"
+            />
+            <p class="italic">
+              Great experience shopping at PetVet.com! Found everything I needed
+              quickly, and my order arrived faster than expected. Definitely my
+              go-to for pet supplies!
+            </p>
+            <h4>Sarah C</h4>
+          </div>
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/male/75.jpg"
+            />
+            <p class="italic">
+              Great experience shopping at PawsomePet.com! The website is easy
+              to navigate, and I found everything I needed for my dog in no
+              time. Quick delivery and excellent customer service. Will
+              definitely be shopping here again!
+            </p>
+            <h4>John M</h4>
+          </div>
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/male/60.jpg"
+              alt="client"
+            />
+            <p class="italic">
+              Great selection of products and quick delivery. My dog loves the
+              new toys I got from PawsomePet.com!
+            </p>
+            <h4>Matthew B</h4>
+          </div>
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/male/6.jpg"
+              alt="client"
+            />
+            <p class="italic">reviews</p>
+            <h4>David L</h4>
+          </div>
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/female/39.jpg"
+              alt="client"
+            />
+            <p class="italic">reviews</p>
+            <h4>Jennifer W</h4>
+          </div>
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/male/41.jpg"
+              alt="clients"
+            />
+            <p class="italic">reviews</p>
+            <h4>Michael S</h4>
+          </div>
+          <div class="testimonial-item">
+            <img
+              src="https://xsgames.co/randomusers/assets/avatars/female/21.jpg"
+              alt="client"
+            />
+            <p class="italic">reviews</p>
+            <h4>Emily P</h4>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="about us" id="about us"></section>
-    <section class="contact" id="contact"></section>
-    <footer></footer>
+    <!-- <section class="about us" id="about us"></section> -->
+    <section class="contact" id="contact">
+      <div class="content">
+        <span class="section-title">Contact Us</span>
+        <h3>Have us contact you by filling and submiting the from</h3>
+        <p></p>
+        <ul>
+          <li></li>
+          <li></li>
+        </ul>
+      </div>
+      <div class="contact-form">
+        <form>
+          <input type="text" name="name" placeholder="Name" />
+          <input type="text" name="Phone" placeholder="Phone" />
+          <input type="text" name="email" placeholder="Email" />
+          <select name="plan">
+            <option disabled selected>Intrested In</option>
+            <option value="Grooming">Grooming</option>
+            <option value="Appointment">Appointment</option>
+            <option value="Day Care">Day Care</option>
+          </select>
+          <div class="terms-container">
+            <input type="checkbox" name="terms" value="1" id="terms" />
+            <label for="terms"
+              >I agree with VetPet's stated
+              <span class="underline">Privacy Policy</span>
+              and
+              <span class="underline">Terms and Condition </span></label
+            >
+          </div>
+          <button type="submit">Call Me</button>
+        </form>
+      </div>
+    </section>
+    <footer>
+      <div class="footer-list-container">
+        <div class="footer-list-item">
+          <h5>Few words about Pet Vet</h5>
+          <br />
+          <p>sjnwuibnwr</p>
+        </div>
+        <div clss="footer-list-item">
+          <h5>Link</h5>
+          <br />
+          <a href="#">Terms and Conditions</a>
+          <br />
+          <a href="#">Privacy Policy</a>
+        </div>
+        <div clss="footer-list-item">
+          <h5>Partners</h5>
+          <br />
+          <a href="https://drools.com/" target="_blank">Drools.com</a>
+        </div>
+      </div>
+      <div class="copyright">
+        <span
+          >copyright &copy; 2024 all rights resevered - By Jyoti &amp;
+          Team</span
+        >
+      </div>
+    </footer>
+    <script
+      src="https://kit.fontawesome.com/bbab36d130.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="script.js"></script>
   </body>
 </html>
